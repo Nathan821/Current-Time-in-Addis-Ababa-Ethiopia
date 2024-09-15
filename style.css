@@ -1,0 +1,74 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.clock-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 50px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#time {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+#date, #day, #timezone {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  color: #ddd;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .clock-container {
+    padding: 20px 30px;
+  }
+
+  #time {
+    font-size: 2.5em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
